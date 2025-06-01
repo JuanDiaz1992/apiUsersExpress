@@ -1,0 +1,208 @@
+# backExpress API
+
+API RESTful para la gestión de usuarios, productos y categorías.
+
+---
+
+## Endpoints de Usuarios
+
+### Obtener todos los usuarios
+
+**GET**
+`/api/users`
+
+---
+
+### Obtener un usuario por ID
+
+**GET**
+`/api/users/:id`
+**Ejemplo:**
+`/api/users/3`
+
+---
+
+### Crear un usuario
+
+**POST**
+`/api/users`
+
+**Body (JSON):**
+
+```json
+{
+  "name": "Juan Pérez",
+  "mail": "juan@mail.com",
+  "age": 30
+}
+```
+
+---
+
+### Actualizar un usuario
+
+**PUT**
+`/api/users/:id`
+**Ejemplo:**
+`/api/users/15`
+
+**Body (JSON):**
+
+```json
+{
+  "name": "Juan Actualizado",
+  "mail": "nuevo@mail.com",
+  "age": 31
+}
+```
+
+> Para usarlo se envía un body a la url con el id del usuario.
+
+---
+
+### Eliminar un usuario
+
+**DELETE**
+`/api/users/:id`
+**Ejemplo:**
+`/api/users/15`
+
+---
+
+## Endpoints de Productos
+
+### Obtener todos los productos
+
+**GET**
+`/api/productos`
+
+---
+
+### Obtener un producto por ID
+
+**GET**
+`/api/productos/:id`
+**Ejemplo:**
+`/api/productos/5`
+
+---
+
+### Obtener productos por categoría
+
+**GET**
+`/api/productos/categoria/:id_categoria`
+**Ejemplo:**
+`/api/productos/categoria/2`
+
+---
+
+### Crear un producto
+
+**POST**
+`/api/productos`
+
+**Body (JSON):**
+
+```json
+{
+  "nombre": "Teclado mecánico",
+  "descripcion": "Teclado retroiluminado",
+  "precio": 49.99,
+  "cantidad": 10,
+  "id_categoria": 2
+}
+```
+
+---
+
+### Actualizar un producto
+
+**PUT**
+`/api/productos/:id`
+**Ejemplo:**
+`/api/productos/5`
+
+**Body (JSON):**
+
+```json
+{
+  "nombre": "Teclado mecánico RGB",
+  "precio": 59.99,
+  "cantidad": 15
+}
+```
+
+---
+
+### Eliminar un producto
+
+**DELETE**
+`/api/productos/:id`
+**Ejemplo:**
+`/api/productos/5`
+
+---
+
+## Endpoints de Categorías
+
+### Obtener todas las categorías
+
+**GET**
+`/api/categorias`
+
+---
+
+### Obtener una categoría por ID
+
+**GET**
+`/api/categorias/:id`
+**Ejemplo:**
+`/api/categorias/3`
+
+---
+
+### Crear una categoría
+
+**POST**
+`/api/categorias`
+
+**Body (JSON):**
+
+```json
+{
+  "nombre": "Electrónica"
+}
+```
+
+---
+
+### Actualizar una categoría
+
+**PUT**
+`/api/categorias/:id`
+**Ejemplo:**
+`/api/categorias/3`
+
+**Body (JSON):**
+
+```json
+{
+  "nombre": "Electrodomésticos"
+}
+```
+
+---
+
+### Eliminar una categoría
+
+**DELETE**
+`/api/categorias/:id`
+**Ejemplo:**
+`/api/categorias/3`
+
+---
+
+## Notas
+
+- Todas las rutas están bajo el prefijo `/api`.
+- Puedes probar los endpoints usando herramientas como Postman, Insomnia o `curl`.

@@ -1,0 +1,5 @@
+[2025-06-01T19:49:14.796Z] GET /api/categorias - IP: ::ffff:127.0.0.1
+[2025-06-01T19:49:34.183Z] GET /api/productos/5 - IP: ::ffff:127.0.0.1
+[2025-06-01T19:49:45.223Z] GET /api/productos/categoria/2 - IP: ::ffff:127.0.0.1
+[2025-06-01T19:49:52.511Z] GET /api/productos/categoria/1 - IP: ::ffff:127.0.0.1
+[2025-06-01T19:49:59.808Z] GET /api/productos - IP: ::ffff:127.0.0.1

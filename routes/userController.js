@@ -6,7 +6,7 @@ const {
   getUser,
   updateUser,
   deleteUser,
-} = require("../users/users");
+} = require("../models/users");
 
 router.get("/users", async (req, res) => {
   try {
@@ -63,7 +63,6 @@ router.post("/users", async (req, res) => {
 });
 
 router.get("/users/:id", async (req, res) => {
-  // Ejemplo: http://localhost:3000/api/users/3
   try {
     const userId = req.params.id;
     if (!userId || isNaN(userId)) {
@@ -97,7 +96,6 @@ router.get("/users/:id", async (req, res) => {
 });
 
 router.put("/users/:id", async (req, res) => {
-  // Para usarlo se envía un body a la url con el id del usuario http://localhost:3000/api/users/15
   try {
     const userId = req.params.id;
     const updateData = req.body;

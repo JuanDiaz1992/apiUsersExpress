@@ -205,4 +205,3 @@ API RESTful para la gestión de usuarios, productos y categorías.
 ## Notas
 
 - Todas las rutas están bajo el prefijo `/api`.
-- Puedes probar los endpoints usando herramientas como Postman, Insomnia o `curl`.
